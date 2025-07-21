@@ -1,0 +1,6 @@
+.card {
+    position: relative;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    transition: var(--transition-smooth) var(--transition-timing-cubic);
+}

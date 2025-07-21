@@ -1,0 +1,14 @@
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 9999px;
+    transition: var(--transition-smooth) var(--transition-timing-cubic);
+    min-width: 7rem;
+}

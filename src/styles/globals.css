@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@import "./theme/colors.css";
+@import "./theme/typography.css";
+@import "./theme/styling.css";
+@import "./variables/layout.css";
+@import "./variables/effects.css";
+@import "./components/buttons.css";
+@import "./components/cards.css";
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+}

@@ -1,0 +1,102 @@
+:root {
+    /* Base color palette - each color defined only once */
+    --color-background: #dbe6e6;
+    --color-foreground: #152328;
+    --color-primary-lighter: #bddcb8;
+    --color-primary-light: #9fd18a;
+    --color-primary-medium: #81c75c;
+    --color-primary-dark: #5d904b;
+    --color-primary-darker: #395a39;
+    --color-secondary-lighter: #92c3c4;
+    --color-secondary-light: #49a1a3;
+    --color-secondary-medium: #007e81;
+    --color-secondary-dark: #076063;
+    --color-secondary-darker: #0e4146;
+    --color-accent-light: #e1ed56;
+    --color-accent-medium: #e3ef26;
+    --color-accent-dark: #b0bc27;
+    --color-warning-light: #ec7a54;
+    --color-warning-medium: #f25623;
+    --color-warning-dark: #bb4924;
+    --color-error-light: #c04d5f;
+    --color-error-medium: #b3001b;
+    --color-error-dark: #7d0b1f;
+    --color-success: #00ff00;
+}
+
+/* Light theme semantic mappings */
+:root {
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+    --primary: var(--color-primary-medium);
+    --primary-light: var(--color-primary-light);
+    --primary-lighter: var(--color-primary-lighter);
+    --primary-dark: var(--color-primary-dark);
+    --primary-darker: var(--color-primary-darker);
+    --secondary: var(--color-secondary-medium);
+    --secondary-light: var(--color-secondary-light);
+    --secondary-lighter: var(--color-secondary-lighter);
+    --secondary-dark: var(--color-secondary-dark);
+    --secondary-darker: var(--color-secondary-darker);
+    --accent: var(--color-accent-medium);
+    --accent-light: var(--color-accent-light);
+    --accent-dark: var(--color-accent-dark);
+    --warning: var(--color-warning-medium);
+    --warning-light: var(--color-warning-light);
+    --warning-dark: var(--color-warning-dark);
+    --error: var(--color-error-medium);
+    --error-light: var(--color-error-light);
+    --error-dark: var(--color-error-dark);
+    --success: var(--color-success);
+}
+
+/* Dark theme semantic mappings */
+[data-theme="dark"] {
+    --background: var(--color-foreground);
+    --foreground: var(--color-background);
+    --primary: var(--color-primary-medium);
+    --primary-light: var(--color-primary-dark);
+    --primary-lighter: var(--color-primary-darker);
+    --primary-dark: var(--color-primary-light);
+    --primary-darker: var(--color-primary-lighter);
+    --secondary: var(--color-secondary-medium);
+    --secondary-light: var(--color-secondary-dark);
+    --secondary-lighter: var(--color-secondary-darker);
+    --secondary-dark: var(--color-secondary-light);
+    --secondary-darker: var(--color-secondary-lighter);
+    --accent: var(--color-accent-medium);
+    --accent-light: var(--color-accent-dark);
+    --accent-dark: var(--color-accent-light);
+    --warning: var(--color-warning-medium);
+    --warning-light: var(--color-warning-dark);
+    --warning-dark: var(--color-warning-light);
+    --error: var(--color-error-medium);
+    --error-light: var(--color-error-dark);
+    --error-dark: var(--color-error-light);
+    --success: var(--color-success);
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-primary-light: var(--primary-light);
+    --color-primary-lighter: var(--primary-lighter);
+    --color-primary-dark: var(--primary-dark);
+    --color-primary-darker: var(--primary-darker);
+    --color-secondary: var(--secondary);
+    --color-secondary-light: var(--secondary-light);
+    --color-secondary-lighter: var(--secondary-lighter);
+    --color-secondary-dark: var(--secondary-dark);
+    --color-secondary-darker: var(--secondary-darker);
+    --color-accent: var(--accent);
+    --color-accent-light: var(--accent-light);
+    --color-accent-dark: var(--accent-dark);
+    --color-warning: var(--warning);
+    --color-warning-light: var(--warning-light);
+    --color-warning-dark: var(--warning-dark);
+    --color-error: var(--error);
+    --color-error-light: var(--error-light);
+    --color-error-dark: var(--error-dark);
+    --color-success: var(--success);
+}

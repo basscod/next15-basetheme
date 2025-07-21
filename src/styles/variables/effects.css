@@ -1,0 +1,103 @@
+:root {
+    --border-radius: 1rem;
+
+    --transition-smooth: 0.3s;
+    --transition-fast: 0.2s;
+    --transition-slow: 0.5s;
+    --transition-timing-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-timing-ease: ease-in-out;
+
+    --shadow-drop: 
+        0 3px 4px 0 rgba(0, 0, 0, 0.20),
+        0 6px 8px 0 rgba(0, 0, 0, 0.15),
+        0 2px 12px 0 rgba(0, 0, 0, 0.12);
+    --shadow-drop-high:
+        0 6px 8px 0 rgba(0, 0, 0, 0.25),
+        0 9px 12px 0 rgba(0, 0, 0, 0.18),
+        0 3px 18px 0 rgba(0, 0, 0, 0.15);
+    --shadow-drop-low:
+        0 2px 3px 0 rgba(0, 0, 0, 0.30),
+        0 3px 6px 0 rgba(0, 0, 0, 0.20);
+
+    --shadow-inset:
+        inset 1px 2px 8px 0 rgba(0, 0, 0, 0.2),
+        inset 2px 2px 8px 0 rgba(0, 0, 0, 0.12),
+        inset 0 2px 8px 0 rgba(0, 0, 0, 0.04),
+        inset -1px -2px 10px rgba(0, 0, 0, 0.05),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.06);
+    --shadow-inset-high:
+        inset 0 4px 12px 0 rgba(0, 0, 0, 0.15),
+        inset 0 8px 16px 0 rgba(0, 0, 0, 0.12),
+        inset 0 2px 24px 0 rgba(0, 0, 0, 0.10),
+        inset 0 2px 0 rgba(0, 0, 0, 0.18),
+        inset 0 -2px 0 rgba(255, 255, 255, 0.12);
+    --shadow-inset-low:
+        inset 0 1px 3px 0 rgba(0, 0, 0, 0.20),
+        inset 0 2px 6px 0 rgba(0, 0, 0, 0.15),
+        inset 0 1px 9px 0 rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(0, 0, 0, 0.12),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.06);
+
+    --bevel:
+        inset 2px 2.5px 1px rgba(255, 255, 255, 0.5),
+        inset -2px -2.5px 1px rgba(0, 0, 0, 0.2);
+    --bevel-b:
+        inset 0 -2.5px 1.5px rgba(0, 0, 0, 0.2);
+    --bevel-t:
+        inset 0 2.5px 1.5px rgba(255, 255, 255, 0.5);
+}
+
+.smooth {
+    transition: var(--transition-smooth) var(--transition-timing-cubic);
+}
+
+.fast {
+    transition: var(--transition-fast) var(--transition-timing-cubic);
+}
+
+.slow {
+    transition: var(--transition-slow) var(--transition-timing-cubic);
+}
+
+.corner {
+    border-radius: var(--border-radius);
+}
+
+.shadow-drop {
+    box-shadow: var(--shadow-drop);
+}
+
+/* Elevated Effect */
+.elevated {
+    box-shadow: var(--shadow-drop), var(--bevel);
+    transition: all var(--transition-smooth) var(--transition-timing-cubic);
+}
+
+.elevated:hover {
+    box-shadow: var(--shadow-drop-high), var(--bevel);
+}
+
+.elevated:active {
+    box-shadow: var(--shadow-drop-low), var(--bevel);
+}
+
+.elevated-b {
+    box-shadow: var(--shadow-drop), var(--bevel-b);
+}
+
+.elevated-t {
+    box-shadow: var(--shadow-drop), var(--bevel-t);
+}
+
+/* Recessed Effect */
+.recessed {
+    box-shadow: var(--shadow-inset);
+}
+
+.recessed:hover {
+    box-shadow: var(--shadow-inset-high);
+}
+
+.recessed:active {
+    box-shadow: var(--shadow-inset-low);
+}

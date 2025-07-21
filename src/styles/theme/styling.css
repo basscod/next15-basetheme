@@ -1,0 +1,34 @@
+/* Elevated Effect */
+.elevated {
+    box-shadow: var(--shadow-drop), var(--bevel);
+    transition: all var(--transition-smooth) var(--transition-timing-cubic);
+}
+
+.elevated:hover {
+    box-shadow: var(--shadow-drop-high), var(--bevel);
+}
+
+.elevated:active {
+    box-shadow: var(--shadow-drop-low), var(--bevel);
+}
+
+.elevated-b {
+    box-shadow: var(--shadow-drop), var(--bevel-b);
+}
+
+.elevated-t {
+    box-shadow: var(--shadow-drop), var(--bevel-t);
+}
+
+/* Recessed Effect */
+.recessed {
+    box-shadow: var(--shadow-inset);
+}
+
+.recessed:hover {
+    box-shadow: var(--shadow-inset-high);
+}
+
+.recessed:active {
+    box-shadow: var(--shadow-inset-low);
+}

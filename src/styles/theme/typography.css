@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+    --font-merriweather: "Merriweather", sans-serif;
+    --font-inter: "Inter", sans-serif;
+}
+
+@theme inline {
+    --font-sans: var(--font-merriweather);
+    --font-mono: var(--font-inter);
+
+    --font-color-title: var(--primary-darker);
+    --font-color-body: var(--secondary-darker);
+}
+
+.typo-title {
+    font-family: var(--font-sans);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--font-color-title);
+}
+
+.typo-name {
+    font-family: var(--font-sans);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    color: var(--font-color-title);
+}
+
+.typo-h1 {
+    font-family: var(--font-sans);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--font-color-title);
+}
+
+.typo-h2 {
+    font-family: var(--font-sans);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--font-color-title);
+}
+
+.typo-h3 {
+    font-family: var(--font-sans);
+    font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--font-color-title);
+}
+
+.typo-h4 {
+    font-family: var(--font-mono);
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--font-color-title);
+}
+
+.typo-body {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--font-color-body);
+}
+
+.typo-label {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: var(--font-color-body);
+}
+
+.typo-caption {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--font-color-title);
+}
+
+@media (max-width: 640px) {
+    .typo-title {
+      font-size: 2.5rem;
+    }
+    
+    .typo-h1 {
+      font-size: 2rem;
+    }
+    
+    .typo-h2 {
+      font-size: 1.5rem;
+    }
+    
+    .typo-h3 {
+      font-size: 1.25rem;
+    }
+    
+    .typo-h4 {
+      font-size: 1.125rem;
+    }
+}
+
+/* Utility classes for different font weights */
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
